@@ -75,9 +75,4 @@ function endGame() {
 playGame();
 
 const reset = document.getElementById("endGameButton");
-reset.onclick = () => {
-	totalScore.playerScore = 0;
-	totalScore.computerScore = 0;
-		showResult(totalScore["computerScore"], totalScore["playerScore"], "", "");
-
-};
+reset.onclick = () => endGame();
